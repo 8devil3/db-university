@@ -34,7 +34,7 @@ WHERE teachers.id = 44;
 
 SELECT students.name AS student_name, students.surname AS student_surname, degrees.name AS degree ,departments.name AS department
 FROM students
-LEFT JOIN degrees
+INNER JOIN degrees
 ON students.degree_id = degrees.id
 INNER JOIN departments
 ON departments.id = degrees.department_id

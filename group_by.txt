@@ -28,6 +28,6 @@ GROUP BY exam_student.exam_id;
 
 SELECT departments.name AS department, COUNT(degrees.id) AS degrees_count
 FROM degrees
-LEFT JOIN departments
+INNER JOIN departments
 ON degrees.department_id = departments.id
 GROUP BY departments.name;
